@@ -1,0 +1,31 @@
+.games_played {
+  display: flex;
+  width: 50%;
+  
+  &__column {
+    width: 100%;
+
+    &__group {
+      &:last-child {
+        border-bottom: thin solid var(--dark-gray);
+      }
+      display: flex;
+    }
+  }
+
+  &__row {
+    width: 100%;
+
+    &___field {
+      border-right: thin solid var(--dark-gray);
+      border-top: thin solid var(--dark-gray);
+      font-size: 12px;
+      list-style: none;
+      padding: 10px 10px;
+
+      &:first-of-type {
+        font-size: 12px;
+      }
+    }
+  }
+}
