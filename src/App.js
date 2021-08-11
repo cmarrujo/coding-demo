@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Participants from './components/Participants/Participants';
 import GamesPlayed from './components/GamesPlayed/GamesPlayed';
 import Modal from './components/Modal/Modal';
@@ -10,6 +10,11 @@ const MyGamesApp = () => {
   const [modalActive, setModalActive] = useState(false);
   const [selectedParticipant, setSelectedParticipant] = useState('');
   const [gamerInformation, setGamerInformation] = useState({});
+
+  useEffect(() => {
+    console.log('Name: <Cesar> <Marrujo>');
+    console.log('Date: <2020-08-10> ');
+  }, []);
 
   return (
     <div className="my_games">
@@ -35,5 +40,8 @@ const MyGamesApp = () => {
     </div>
   );
 }
+
+// Name: <Cesar> <Marrujo>
+// Date: <2020-08-10> 
 
 export default MyGamesApp;
